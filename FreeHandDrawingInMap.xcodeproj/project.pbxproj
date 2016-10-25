@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		293A20891DBF404400D51616 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A20881DBF404400D51616 /* CanvasView.swift */; };
+		293A208B1DBF51FE00D51616 /* DeleteMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A208A1DBF51FE00D51616 /* DeleteMarker.swift */; };
+		293A208D1DBF542600D51616 /* HelperLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293A208C1DBF542600D51616 /* HelperLocationManager.swift */; };
+		2978A7161DBF6C930005C211 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2978A7151DBF6C930005C211 /* Extensions.swift */; };
 		298683031DBF37A500497708 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298683021DBF37A500497708 /* AppDelegate.swift */; };
 		298683051DBF37A500497708 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298683041DBF37A500497708 /* ViewController.swift */; };
 		298683081DBF37A500497708 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 298683061DBF37A500497708 /* Main.storyboard */; };
 		2986830A1DBF37A500497708 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 298683091DBF37A500497708 /* Assets.xcassets */; };
 		2986830D1DBF37A500497708 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2986830B1DBF37A500497708 /* LaunchScreen.storyboard */; };
 		298683181DBF37A500497708 /* FreeHandDrawingInMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 298683171DBF37A500497708 /* FreeHandDrawingInMapTests.swift */; };
+		FA017C0210F7E92860876798 /* Pods_FreeHandDrawingInMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 443DDBEBC0195230CBD780D1 /* Pods_FreeHandDrawingInMap.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		293A20881DBF404400D51616 /* CanvasView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		293A208A1DBF51FE00D51616 /* DeleteMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeleteMarker.swift; sourceTree = "<group>"; };
+		293A208C1DBF542600D51616 /* HelperLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperLocationManager.swift; sourceTree = "<group>"; };
+		2978A7151DBF6C930005C211 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		298682FF1DBF37A500497708 /* FreeHandDrawingInMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FreeHandDrawingInMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		298683021DBF37A500497708 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		298683041DBF37A500497708 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +45,9 @@
 		298683131DBF37A500497708 /* FreeHandDrawingInMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FreeHandDrawingInMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		298683171DBF37A500497708 /* FreeHandDrawingInMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FreeHandDrawingInMapTests.swift; sourceTree = "<group>"; };
 		298683191DBF37A500497708 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		443DDBEBC0195230CBD780D1 /* Pods_FreeHandDrawingInMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FreeHandDrawingInMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85EC1826EC1E3E3F675D4D33 /* Pods-FreeHandDrawingInMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeHandDrawingInMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FreeHandDrawingInMap/Pods-FreeHandDrawingInMap.debug.xcconfig"; sourceTree = "<group>"; };
+		9CCC66866015374DCC6F9FDD /* Pods-FreeHandDrawingInMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FreeHandDrawingInMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-FreeHandDrawingInMap/Pods-FreeHandDrawingInMap.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA017C0210F7E92860876798 /* Pods_FreeHandDrawingInMap.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +69,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27D897C204F123139A22E9D0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85EC1826EC1E3E3F675D4D33 /* Pods-FreeHandDrawingInMap.debug.xcconfig */,
+				9CCC66866015374DCC6F9FDD /* Pods-FreeHandDrawingInMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		2978A7171DBF6FC90005C211 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				293A208A1DBF51FE00D51616 /* DeleteMarker.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2978A7181DBF6FD00005C211 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				293A20881DBF404400D51616 /* CanvasView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2978A7191DBF6FD50005C211 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				298683041DBF37A500497708 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		2978A71A1DBF6FE50005C211 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				2978A7151DBF6C930005C211 /* Extensions.swift */,
+				293A208C1DBF542600D51616 /* HelperLocationManager.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		298682F61DBF37A300497708 = {
 			isa = PBXGroup;
 			children = (
 				298683011DBF37A500497708 /* FreeHandDrawingInMap */,
 				298683161DBF37A500497708 /* FreeHandDrawingInMapTests */,
 				298683001DBF37A500497708 /* Products */,
+				27D897C204F123139A22E9D0 /* Pods */,
+				5F024260C5AB56BFF3B790F2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -78,7 +135,10 @@
 			isa = PBXGroup;
 			children = (
 				298683021DBF37A500497708 /* AppDelegate.swift */,
-				298683041DBF37A500497708 /* ViewController.swift */,
+				2978A71A1DBF6FE50005C211 /* Helpers */,
+				2978A7171DBF6FC90005C211 /* Model */,
+				2978A7181DBF6FD00005C211 /* View */,
+				2978A7191DBF6FD50005C211 /* Controller */,
 				298683061DBF37A500497708 /* Main.storyboard */,
 				298683091DBF37A500497708 /* Assets.xcassets */,
 				2986830B1DBF37A500497708 /* LaunchScreen.storyboard */,
@@ -96,6 +156,14 @@
 			path = FreeHandDrawingInMapTests;
 			sourceTree = "<group>";
 		};
+		5F024260C5AB56BFF3B790F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				443DDBEBC0195230CBD780D1 /* Pods_FreeHandDrawingInMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2986831C1DBF37A500497708 /* Build configuration list for PBXNativeTarget "FreeHandDrawingInMap" */;
 			buildPhases = (
+				F0B88D2D0B3582348417C18A /* [CP] Check Pods Manifest.lock */,
 				298682FB1DBF37A300497708 /* Sources */,
 				298682FC1DBF37A300497708 /* Frameworks */,
 				298682FD1DBF37A300497708 /* Resources */,
+				CB41F79B77B20CA4FCED0484 /* [CP] Embed Pods Frameworks */,
+				5A9B758F792A47F6A7503A5F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,13 +265,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A9B758F792A47F6A7503A5F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeHandDrawingInMap/Pods-FreeHandDrawingInMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB41F79B77B20CA4FCED0484 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FreeHandDrawingInMap/Pods-FreeHandDrawingInMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0B88D2D0B3582348417C18A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		298682FB1DBF37A300497708 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				298683051DBF37A500497708 /* ViewController.swift in Sources */,
+				2978A7161DBF6C930005C211 /* Extensions.swift in Sources */,
 				298683031DBF37A500497708 /* AppDelegate.swift in Sources */,
+				293A208B1DBF51FE00D51616 /* DeleteMarker.swift in Sources */,
+				293A20891DBF404400D51616 /* CanvasView.swift in Sources */,
+				293A208D1DBF542600D51616 /* HelperLocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,11 +460,12 @@
 		};
 		2986831D1DBF37A500497708 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85EC1826EC1E3E3F675D4D33 /* Pods-FreeHandDrawingInMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FreeHandDrawingInMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.charts.TestCharts.FreeHandDrawingInMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -349,11 +473,12 @@
 		};
 		2986831E1DBF37A500497708 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CCC66866015374DCC6F9FDD /* Pods-FreeHandDrawingInMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FreeHandDrawingInMap/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.charts.TestCharts.FreeHandDrawingInMap;
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.Test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -406,6 +531,7 @@
 				2986831E1DBF37A500497708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2986831F1DBF37A500497708 /* Build configuration list for PBXNativeTarget "FreeHandDrawingInMapTests" */ = {
 			isa = XCConfigurationList;
@@ -414,6 +540,7 @@
 				298683211DBF37A500497708 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

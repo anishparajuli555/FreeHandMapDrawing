@@ -2,20 +2,22 @@
 //  AppDelegate.swift
 //  FreeHandDrawingInMap
 //
-//  Created by SMS-DEV-ANISH on 10/25/16.
-//  Copyright © 2016 Macuser. All rights reserved.
+//  Created by Anish on 10/25/16.
+//  Copyright © 2016 Anish. All rights reserved.
 //
 
 import UIKit
+import  GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    let GOOGLEK_MAP_KEY  = ""
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey(GOOGLEK_MAP_KEY)
         return true
     }
 

@@ -1,14 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FreeHandDrawingInMap" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +17,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ccB-OF-aOd" customClass="GMSMapView">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J2T-3x-Ayb">
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="HjO-sp-6sQ"/>
+                                    <constraint firstAttribute="width" constant="30" id="QNs-dh-MAf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="c2J-5U-6Dg"/>
+                                    <constraint firstAttribute="height" constant="30" id="ihc-vV-g2o"/>
+                                </constraints>
+                                <state key="normal" image="pen"/>
+                                <connections>
+                                    <action selector="drawActn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ezG-3K-Nwj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uNu-b6-i4m">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="6bE-el-VfQ"/>
+                                    <constraint firstAttribute="width" constant="30" id="IBg-kg-h7L"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" image="cross-1"/>
+                                <connections>
+                                    <action selector="cancelDrawingActn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l0z-Ho-h8n"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ccB-OF-aOd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="6Xf-po-ImQ"/>
+                            <constraint firstAttribute="trailing" secondItem="uNu-b6-i4m" secondAttribute="trailing" constant="20" id="CkE-Zg-4F4"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="uNu-b6-i4m" secondAttribute="bottom" constant="86" id="Doi-9r-srQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ccB-OF-aOd" secondAttribute="bottom" id="G67-Lm-O3l"/>
+                            <constraint firstItem="ccB-OF-aOd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="S99-pm-I0u"/>
+                            <constraint firstAttribute="trailing" secondItem="ccB-OF-aOd" secondAttribute="trailing" id="bSf-R5-ABp"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="J2T-3x-Ayb" secondAttribute="bottom" constant="34" id="n6G-uX-uDx"/>
+                            <constraint firstAttribute="trailing" secondItem="J2T-3x-Ayb" secondAttribute="trailing" constant="20" id="nsB-ut-bbx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cancelDrawingBtn" destination="uNu-b6-i4m" id="IZk-Ze-9OE"/>
+                        <outlet property="drawBtn" destination="J2T-3x-Ayb" id="WH9-df-1jj"/>
+                        <outlet property="googleMapView" destination="ccB-OF-aOd" id="oBg-re-GeH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="36.431784107946029"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="cross-1" width="30" height="30"/>
+        <image name="pen" width="16" height="16"/>
+    </resources>
 </document>
